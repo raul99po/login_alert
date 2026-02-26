@@ -17,7 +17,7 @@ Este script envía una alerta a tu cuenta de Telegram cada vez que alguien inici
 
 1. **Clona el repositorio**:
    ```bash
-   git clone https://github.com/tu_usuario/JV-LL-J0.git
+   git clone https://github.com/raul99po/login_alert.git
    cd ssh-login-alert-telegram
    
 2. **Edita el script con tu BOT_TOKEN y CHAT_ID**:
