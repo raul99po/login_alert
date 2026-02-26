@@ -22,16 +22,16 @@ Este script envía una alerta a tu cuenta de Telegram cada vez que alguien inici
    
 2. **Edita el script con tu BOT_TOKEN y CHAT_ID**:
    ```bash
-   nano login_alert.sh
+   nano ssh-login-notifier.sh
 
 4. **Dale permisos de ejecución**:
    ```bash
-   chmod +x login_alert.sh
+   chmod +x ssh-login-notifier.sh
    
 6. **Ubica el script en el archivo SSHRC del sistema**:
    Copia el contenido del script dentro de /etc/ssh/sshrc o enlázalo con:
    ```bash
-   sudo cp login_alert.sh /etc/ssh/sshrc
+   sudo cp ssh-login-notifier.sh /etc/ssh/sshrc
    sudo chmod +x /etc/ssh/sshrc
    
 8. **Crea el archivo de log si no existe**:
@@ -57,5 +57,5 @@ No publiques tu BOT_TOKEN ni CHAT_ID en GitHub. Usa variables de entorno o un ar
 ## 📬 Prueba manual del script
 Para probarlo sin conectarte por SSH:
 ```bash
-SSH_CONNECTION="192.168.1.100 22 192.168.1.10 22" ./login_alert.sh
+SSH_CONNECTION="<IP_CLIENTE> 22 <IP_SERVIDOR> 22" ./ssh-login-notifier.sh
 
